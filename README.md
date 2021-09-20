@@ -44,6 +44,8 @@ This script will take a measurement of the hopper empty, ask you to fill it with
 
 ## Notes     
 - This might be a little hacky, but it works so far :)     
+- I have no reason for taking 9 measurements when calculating an average, but I figured more data is better right?     
+
 - This is still in breadboard form on my desk and not fully tested "in production"     
 - I have noticed that I will occassioanlly get very random out of range measurements from the sensor, this may be due to frequency of measurements (in my testing), hopefully that won't be an issue in production     
 - I will post drawings/designs of a case for this once I finish one     
