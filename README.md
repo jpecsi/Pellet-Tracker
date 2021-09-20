@@ -25,7 +25,8 @@ Pellet-Tracker is a dedicated sensor that monitors the remaining level of pellet
 3. Adjust the permissions on the '/opt/sensor/' directory:     
       `sudo chmod -R /opt/sensor`     
 4. Configure the 'settings.conf' file, this file currently has sample data that will need to be adjusted for your environment     
-5. Use crontab to execute the script periodically, I personally run it every 30 minutes:
+5. Use crontab to execute the script periodically, I personally run it every 30 minutes:     
+
       `sudo crontab -e`          
       `*/30 * * * * /usr/bin/python /opt/sensor/sensor.py`     
 
@@ -37,3 +38,13 @@ Pellet-Tracker is a dedicated sensor that monitors the remaining level of pellet
       `python /opt/sensor/calibrate-sensor.py`     
 
 This script will take a measurement of the hopper empty, ask you to fill it with pellets and takes a new measurement. The script will automatically update the configuration file (settings.conf) with the new values. 
+     
+          
+
+
+## Notes     
+- This might be a little hacky, but it works so far :)     
+- This is still in breadboard form on my desk and not fully tested "in production"     
+- I have noticed that I will occassioanlly get very random out of range measurements from the sensor, this may be due to frequency of measurements (in my testing), hopefully that won't be an issue in production     
+- I will post drawings/designs of a case for this once I finish one     
+- Pictures and detailed setup will be documented eventually on my blog
